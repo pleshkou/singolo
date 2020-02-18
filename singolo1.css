@@ -1,3 +1,27 @@
+@font-face {
+    font-family: Lato-300;
+    src: url(/assets/fonts/Lato-Light.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lato-400;
+    src: url(/assets/fonts/Lato-Regular.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lato-700;
+    src: url(/assets/fonts/Lato-Bold.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lato-900;
+    src: url(/assets/fonts/Lato-Black.ttf);
+    font-style: normal;
+}
+
 header {
     height: 89px;
     width: 1020px;
@@ -8,9 +32,9 @@ header {
 }
 
 .logo {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato-700', sans-serif;
     font-size: 25px;
-    font-weight: 700;
+    /* font-weight: 700; */
     letter-spacing: 0px;
     color: #ffffff;
     width: 195px;
@@ -31,7 +55,7 @@ header {
 }
 
 .navbar ul {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato-700', sans-serif;
     font-size: 12px;
     display: flex;
     justify-content: space-between;
@@ -75,9 +99,9 @@ nav p {
 }
 
 .services h1 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato-900', sans-serif;
     font-size: 30px;
-    font-weight: 900;
+    /* font-weight: 900; */
     color: #666d89;
     padding-bottom: 21px;
 
@@ -87,8 +111,8 @@ nav p {
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
-    font-family: "Lato";
-    font-weight: 300;
+    font-family: "Lato-300";
+    /* font-weight: 300; */
     text-align: left;
     letter-spacing: 0.009em;
 }
@@ -98,7 +122,7 @@ nav p {
 }
 
 .layout {
-    padding: 35px 41px 10px 40px;
+    padding: 35px 41px 3px 40px;
     display: flex;
     justify-content: space-between;
 }
@@ -113,19 +137,19 @@ nav p {
     font-size: 18px;
     line-height: 18px;
     color: #666d89;
-    font-family: "Lato";
-    font-weight: 900;
+    font-family: "Lato-900";
+    /* font-weight: 900; */
     text-align: left;
 }
 
 .layout p {
     width: 220px;
-    height: 128px;
+    height: 58px;
     font-size: 12px;
     line-height: 22px;
     color: #767e9e;
-    font-family: "Lato";
-    font-weight: 400;
+    font-family: "Lato-400";
+    /* font-weight: 400; */
     text-align: justify;
     letter-spacing: 0px;
     padding-top: 10px;
