@@ -10,42 +10,52 @@
 </head>
 <body>
   <div class="first-page">
+    <a name="home"></a>
     <header>
         <div class="logo">
             <h1>SINGOLO<p style="color:#bc5c59;">*</p></h1>
         </div>
         <nav class="navbar">
-            <ul>
-                <li><a href="javascript:return false;">HOME</a></li>
+            <ul id="menu">
+                <li><a class="active" href="#home">HOME</a></li>
                 <li><p>·</p></li>
-                <li><a href="javascript:return false;">SERVICES</a></li>
+                <li><a href="#services">SERVICES</a></li>
                 <li><p>·</p></li>
-                <li><a href="javascript:return false;">PORTFOLIO</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
                 <li><p>·</p></li>
-                <li><a href="javascript:return false;">ABOUT</a></li>
+                <li><a href="#about">ABOUT</a></li>
                 <li><p>·</p></li>
-                <li><a href="javascript:return false;">CONTACT</a></li>
+                <li><a href="#contacts">CONTACT</a></li>
             </ul>
         </nav>
    </header>
    <div class="header-bottom"></div>
-   <div class="slider">
-        <div class="chev">
-            <a href="javascript:return false;"><img src="./assets/images/chev_left.jpg" alt=""></a>
+    <div id="wrapper" class="wrapper-slider">
+        <div class="slider" style="z-index: 3;">
+            <div class="phone phone-left">
+                <img id="vertical" style="z-index: 5;" src="./assets/images/phone-vertical.png" alt="">
+            </div>
+            <div class="phone phone-right">
+                <img id="horizontal" src="./assets/images/phone-horizontal.png" alt="">
+            </div>
         </div>
-        <div class="phone phone-left">
-            <img src="./assets/images/phone-vertical.png" alt="">
+        <div id="left-off" class="left-off" style="z-index: 2;"></div>
+        <div id="right-off" class="right-off" style="z-index: 2;"></div>
+        <div class="chev-left">
+            <img id="chev-left" style="z-index: 10;" src="./assets/images/chev_left.png" alt="">
         </div>
-        <div class="phone phone-right">
-            <img src="./assets/images/phone-horizontal.png" alt="">
+        <div class="chev-right">
+            <img id="chev-right" style="z-index: 10;" src="./assets/images/chev_right.png" alt="">
         </div>
-        <div class="chev">
-            <a href="javascript:return false;"><img src="./assets/images/chev_right.jpg" alt=""></a>
+        <div class="slide2">
+            <img id="slide2" style="z-index: 1" src="./assets/images/slide-2.png" alt="">
         </div>
    </div>
    <div class="services">
+    <a name="services"></a>
        <div class="content">
-            <h1>Our Services</h1>
+        
+        <h1>Our Services</h1>
             <p>
                 Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
                 Duis mollis, non commodo luctus, nisi erat porttitor
@@ -119,85 +129,86 @@
    </div>
   </div>
   <div class="second-page">
-  <header>
-      <h2>Portfolio</h2>
-      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-      <nav>
-          <a href="javascript:return false;">All</a>
-          <a href="javascript:return false;">Web Design</a>
-          <a href="javascript:return false;">Graphic Design</a>
-          <a href="javascript:return false;">Artwork</a>
-      </nav>
-  </header>
-  <section class="wrapper">
-      <section class="pictures">
-          <img src="./assets/images/image1.png" alt="">
-          <img src="./assets/images/image2.png" alt="">
-          <img src="./assets/images/image3.png" alt="">
-          <img src="./assets/images/image4.png" alt="">
-          <img src="./assets/images/image5.png" alt="">
-          <img src="./assets/images/image6.png" alt="">
-          <img src="./assets/images/image7.png" alt="">
-          <img src="./assets/images/image8.png" alt="">
-          <img src="./assets/images/image9.png" alt="">
-          <img src="./assets/images/image10.png" alt="">
-          <img src="./assets/images/image11.png" alt="">
-          <img src="./assets/images/image12.png" alt="">
-      </section>
-  </section>
-  
-  <div class="down-block">
+    <a name="portfolio"></a>
+    <header>
+        <h2>Portfolio</h2>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        <nav id="tab">
+            <a>All</a>
+            <a>Web Design</a>
+            <a>Graphic Design</a>
+            <a>Artwork</a>
+        </nav>
+    </header>
+    <section class="wrapper">
+        <section class="pictures" id="pictures">
+            <img class="p1" src="./assets/images/image1.png" alt="">
+            <img class="p2" src="./assets/images/image2.png" alt="">
+            <img class="p3" src="./assets/images/image3.png" alt="">
+            <img class="p4" src="./assets/images/image4.png" alt="">
+            <img class="p5" src="./assets/images/image5.png" alt="">
+            <img class="p6" src="./assets/images/image6.png" alt="">
+            <img class="p7" src="./assets/images/image7.png" alt="">
+            <img class="p8" src="./assets/images/image8.png" alt="">
+            <img class="p9" src="./assets/images/image9.png" alt="">
+            <img class="p10" src="./assets/images/image10.png" alt="">
+            <img class="p11" src="./assets/images/image11.png" alt="">
+            <img class="p12" src="./assets/images/image12.png" alt="">
+        </section>
+    </section>
+    <div class="down-block">
+        <a name="about"></a>
 
-      <section class="about-us">
-          <h2>About Us</h2>
-          <p class="first-string">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor</p>
-          <p class="second-string">ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-      </section>
-      <section class="photo">
-          <div class="about">
-              <img class="vis" src="./assets/images/photo1.png" alt="">
-              <h3>Adam Jensen</h3>
-              <div class="txt adam">
-                  Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
-              </div>
-              <div class="social">
-                  <a href="javascript:return false;"><img src="./assets/images/facebook.png" alt=""></a>
-                  <a href="javascript:return false;"><img src="./assets/images/google.png" alt=""></a>
-                  <a href="javascript:return false;"><img src="./assets/images/twitter.png" alt=""></a>
-                  <a href="javascript:return false;"><img src="./assets/images/linkedin.png" alt=""></a>
-              </div>
-          </div>
-          <div class="about">
-              <img class="vis" src="./assets/images/photo2.png" alt="">
-              <h3>Desmond Miles</h3>
-              <div class="txt desmond">
-                  Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
-              </div>
-              <div class="social">
-                  <a href="javascript:return false;"><img src="./assets/images/facebook.png" alt=""></a>
-                  <a href="javascript:return false;"><img src="./assets/images/google.png" alt=""></a>
-                  <a href="javascript:return false;"><img src="./assets/images/twitter.png" alt=""></a>
-                  <a href="javascript:return false;"><img src="./assets/images/linkedin.png" alt=""></a>
-              </div>
-          </div>
-          <div class="about">
-          <img class="photo3 vis" src="./assets/images/photo3.png" alt="">
-          <h3>Scolara Visari</h3>
-          <div class="txt scolara">
-              Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
-          </div>
-          <div class="social scolara">
-              <a href="javascript:return false;"><img src="./assets/images/facebook.png" alt=""></a>
-              <a href="javascript:return false;"><img src="./assets/images/google.png" alt=""></a>
-              <a href="javascript:return false;"><img src="./assets/images/twitter.png" alt=""></a>
-              <a href="javascript:return false;"><img src="./assets/images/linkedin.png" alt=""></a>
-          </div>
-          </div>
-      </section>
-  </div>
-
+            <section class="about-us">
+                <h2>About Us</h2>
+                <p class="first-string">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor</p>
+                <p class="second-string">ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            </section>
+            <section class="photo">
+                <div class="about">
+                    <img class="vis" src="./assets/images/photo1.png" alt="">
+                    <h3>Adam Jensen</h3>
+                    <div class="txt adam">
+                        Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
+                    </div>
+                    <div class="social">
+                        <a href="javascript:return false;"><img src="./assets/images/facebook.png" alt=""></a>
+                        <a href="javascript:return false;"><img src="./assets/images/google.png" alt=""></a>
+                        <a href="javascript:return false;"><img src="./assets/images/twitter.png" alt=""></a>
+                        <a href="javascript:return false;"><img src="./assets/images/linkedin.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="about">
+                    <img class="vis" src="./assets/images/photo2.png" alt="">
+                    <h3>Desmond Miles</h3>
+                    <div class="txt desmond">
+                        Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
+                    </div>
+                    <div class="social">
+                        <a href="javascript:return false;"><img src="./assets/images/facebook.png" alt=""></a>
+                        <a href="javascript:return false;"><img src="./assets/images/google.png" alt=""></a>
+                        <a href="javascript:return false;"><img src="./assets/images/twitter.png" alt=""></a>
+                        <a href="javascript:return false;"><img src="./assets/images/linkedin.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="about">
+                <img class="photo3 vis" src="./assets/images/photo3.png" alt="">
+                <h3>Scolara Visari</h3>
+                <div class="txt scolara">
+                    Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
+                </div>
+                <div class="social scolara">
+                    <a href="javascript:return false;"><img src="./assets/images/facebook.png" alt=""></a>
+                    <a href="javascript:return false;"><img src="./assets/images/google.png" alt=""></a>
+                    <a href="javascript:return false;"><img src="./assets/images/twitter.png" alt=""></a>
+                    <a href="javascript:return false;"><img src="./assets/images/linkedin.png" alt=""></a>
+                </div>
+                </div>
+            </section>
+    </div>
   </div>
   <div class="third-page">
+    <a name="contacts"></a>
     <div class="background">
       <div class="wrapper">
         <header>
@@ -206,7 +217,7 @@
           <p>ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         </header>
         <div class="container">
-          <form name="informat" method="post" action="#">
+          <form name="informat" onsubmit="showData(this);return false;">
             <input type="text" name="name" size="70" placeholder="Name (Required)" required>
             <input type="email" name="email" size="70" placeholder="Email (Required)" required>
             <input type="text" name="subject" size="70" placeholder="Subject">
@@ -231,6 +242,12 @@
               </div>
             </div>
           </div>
+          <div class="modal" style="display: none">
+            <div class="inner">
+            </div>
+            <button class="butt">OK</button>
+
+          </div>
         </div>
     
   
@@ -251,9 +268,7 @@
 
   </div>
 
-
-
-
+  <script src="script.js"></script>;
 
 </body>
 </html>
