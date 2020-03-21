@@ -1,5 +1,9 @@
 /* first page */
 
+html {
+  scroll-behavior: smooth;
+}
+
 .first-page header {
   height: 89px;
   width: 1020px;
@@ -7,6 +11,9 @@
   justify-content: space-between;
   background-color: #2d2f39;
   border-bottom: 6px solid #323746;
+  /*  */
+  position: fixed;
+  z-index: 20;
 }
 
 .first-page .logo {
@@ -65,11 +72,13 @@
 .first-page .slider {
   height: 594px;
   width: 1020px; 
+  overflow: hidden;
   background-image: url(./assets/images/shadow-back.png);
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: absolute;
+  top: 95px;
   border-bottom: 6px solid #ea676b;
 }
 
@@ -96,7 +105,7 @@
   display: block;
   width: 333px;
   height: 188px;
-  top: 283px;
+  top: 282px;
   left: 485px;
   background-color: rgba(0, 0, 0, 1);
 }
@@ -136,6 +145,7 @@
   background-color: #f1f1f1;
   border-top: 6px solid #ea676b;
   border-bottom: 6px solid #ffffff;
+  margin-top: 95px;
 } 
 
 .first-page .services .content {
@@ -204,6 +214,10 @@
 }
 
 /* second page */
+.shift {
+  position: relative;
+  top: -81px;
+}
 
 .second-page header {
   height: 195px;
