@@ -1,1 +1,1 @@
-https://pleshkou.github.io/singolo/
+*https://pleshkou.github.io/singolo/
